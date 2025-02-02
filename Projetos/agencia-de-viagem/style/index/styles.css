@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-image: url('../style/image/rio-de-janeiro.jpg');
+    background-image: url('../image/turismo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,18 +97,12 @@ nav .nav-links li a {
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-    .package-selection {
-        grid-template-columns: 1fr;
-    }
-}
-
 .reservation {
     margin-top: -50px;
     width: 80%;
     max-width: 900px;
     padding: 40px;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.5);
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     z-index: 10;
@@ -130,10 +124,6 @@ nav .nav-links li a {
     flex-wrap: wrap;
 }
 
-.pacotes {
-    padding: 50px 20px;
-    text-align: center;
-}
 
 .pacotes h2 {
     font-size: 2.5rem;
@@ -147,7 +137,7 @@ nav .nav-links li a {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px;
+    padding: 30px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -195,7 +185,7 @@ nav .nav-links li a {
 
 .pacote-info .btn-saber-mais {
     display: inline-block;
-    background-color: #ff9800;
+    background-color: #A7CBD9;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -205,7 +195,7 @@ nav .nav-links li a {
 }
 
 .pacote-info .btn-saber-mais:hover {
-    background-color: #e68900;
+    background-color: #F2C849;
 }
 
 @media (max-width: 768px) {
@@ -213,17 +203,43 @@ nav .nav-links li a {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .pacote-img img {
         margin-right: 0;
         margin-bottom: 20px;
         width: 100%;
     }
-    
+
     .pacote-info {
         max-width: 100%;
     }
 }
+
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s;
+}
+
+.social-icon img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 
 .form-group {
     width: 22%;
@@ -251,8 +267,7 @@ nav .nav-links li a {
 
 .btn-submit {
     width: 100%;
-    background-color: #776047;
-    border-color: #776047;
+    background-color:#A7CBD9;
     color: white;
     font-size: 1.2em;
     padding: 12px;
@@ -263,7 +278,7 @@ nav .nav-links li a {
 }
 
 .btn-submit:hover {
-    background-color: #8a94a0;
+    background-color: #F2D4C2;
 }
 
 section {
@@ -297,6 +312,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px 0;
+    margin-top: 20px;
     text-align: center;
 }
 
